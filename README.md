@@ -8,38 +8,15 @@ To write a program to predict the profit of a city using the linear regression m
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1.Import necessary libraries such as pandas, numpy, and sklearn modules like StandardScaler.
 
-2.Load the dataset 50_Startups.csv using pandas.read_csv().
 
-3.Extract features (X) and the target variable (y) from the dataset.
+1.Import all the required packages.
 
-X: Select all independent variables (features).
-y: Select the dependent variable (target).
-4.Standardize the features X1 (numerical independent variables in X) and the target variable y using StandardScaler from sklearn.
+2.Display the output values using graphical representation tools as scatter plot and graph.
 
-Fit the scaler to X1 and y to compute the mean and standard deviation.
-Transform X1 and y to ensure they have zero mean and unit variance.
-5.Add an intercept column to X1.
+3.predict the values using predict() function.
 
-Create a column of ones with the same number of rows as X1.
-Append this column to X1 to account for the intercept term in the regression.
-6.Define a custom function named linear_regression.
-
-This function takes the design matrix (X1) and the target variable (y) as inputs.
-Use the formula theta = (X'X)^(-1) X'y to compute the learned parameters (theta), where X' is the transpose of X.
-7.Call the linear_regression function using the standardized X1 and y to obtain the parameters (theta).
-
-8.Prepare the new data point for prediction.
-
-Standardize the new data point using the same scaler used for X1.
-Append the intercept term to the new data point.
-9.Make a prediction using the computed theta.
-
-Multiply the new data point (including the intercept term) with theta to calculate the predicted value.
-10.Print the predicted value for the new data point.
-
-Optionally, inverse-transform the standardized prediction to return it to its original scale.
+4.Display the predicted values and end the program
 
 ## Program:
 ```
